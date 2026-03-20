@@ -6,6 +6,16 @@
 	"$schema": "node_modules/wrangler/config-schema.json",
 	"name": "servercreek",
 	"main": "src/index.js",
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "servercreek-db",
+			"database_id": "<paste-after-running-d1-create>"
+		}
+	],
+	"vars": {
+		"ALLOW_LOCALHOST": "false"
+	},
 	"compatibility_date": "2026-03-10",
 	"observability": {
 		"enabled": true
